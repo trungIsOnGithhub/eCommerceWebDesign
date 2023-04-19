@@ -1,0 +1,29 @@
+.banner-container {
+    width:100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+#banner1 {
+    background-color: chartreuse;
+    width:50%;
+    height:10em;
+}
+#banner2 {
+    height:10em;
+    padding-left:1em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#banner2-1 {
+    background-color: palevioletred;
+    width:18em;
+    height:5em;
+}
+#banner2-2 {
+    background-color: gold;
+    width:18em;
+    height:4em;
+}
