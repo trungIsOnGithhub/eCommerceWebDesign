@@ -5,6 +5,7 @@ import ToastContainer from "react-bootstrap/ToastContainer";
 import InputGroup from "react-bootstrap/InputGroup";
 import FooterComponent from "../components/FooterComponent";
 import NavbarComponent from "../components/NavbarComponent";
+import SocialLogin from "../components/SocialLogin";
 import { FaUser } from "react-icons/fa";
 import { FaUnlock } from "react-icons/fa";
 import { LinkContainer } from "react-router-bootstrap";
@@ -155,6 +156,7 @@ function LoginPage() {
                                             <span>Register</span>
                                         </LinkContainer>
                                     </Form.Text>
+                                    <SocialLogin />
                                 </div>
                             </Form>
                         </>
