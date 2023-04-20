@@ -13,6 +13,11 @@ import "../css/StorePage.css";
 import { BASE_URL } from "../Constants";
 
 function StorePage() {
+    const topbooks = [{"id":1,"name":"Matilda","author":"ROALD DAHL","category":"Carte pentru copii","publishing_house":"Penguin","price":27,"discount":0,"quantity":22,"availability_date":"2020-11-24","rating":4,"image":"matilda.jpg"}
+    ,{"id":2,"name":"Thinking, Fast and Slow","author":"Daniel Kahneman","category":"Psihologie","publishing_house":"Penguin","price":55,"discount":0,"quantity":29,"availability_date":"2021-08-17","rating":5,"image":"thinking_fast_and_slow.jpg"}
+    ,{"id":3,"name":"One Of Us Is Lying","author":"Karen McManus","category":"Science Fiction","publishing_house":"Penguin","price":51,"discount":25,"quantity":1,"availability_date":"2021-01-29","rating":5,"image":"one_of_us_is_lying.jpg"}
+    ];
+    
     const books = [{"id":1,"name":"Matilda","author":"ROALD DAHL","category":"Carte pentru copii","publishing_house":"Penguin","price":27,"discount":0,"quantity":22,"availability_date":"2020-11-24","rating":4,"image":"matilda.jpg"}
     ,{"id":2,"name":"Thinking, Fast and Slow","author":"Daniel Kahneman","category":"Psihologie","publishing_house":"Penguin","price":55,"discount":0,"quantity":29,"availability_date":"2021-08-17","rating":5,"image":"thinking_fast_and_slow.jpg"}
     ,{"id":3,"name":"One Of Us Is Lying","author":"Karen McManus","category":"Science Fiction","publishing_house":"Penguin","price":51,"discount":25,"quantity":1,"availability_date":"2021-01-29","rating":5,"image":"one_of_us_is_lying.jpg"}
@@ -122,7 +127,7 @@ function StorePage() {
                     isAdmin={isAdmin}
                     filterValues={filterValues}
                     filters={filters}
-                    books={books}
+                    books={topbooks}
                     setFilters={setFilters}
                     handleChange={handleChange}
                     handleReset={handleReset}

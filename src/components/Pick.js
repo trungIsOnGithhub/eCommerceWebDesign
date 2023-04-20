@@ -12,29 +12,33 @@ export default function Pick({
     cartItemsNumber,
     setCartItemsNumber
 }) {
-    const item = books[0];
+
     return (
-        <div className='pick-container'>
-            <Book
-                key={item.id}
-                id={item.id}
-                date={item.availability_date}
-                discount={item.discount}
-                name={item.name}
-                author={item.author}
-                category={item.category}
-                image={item.image}
-                brand={item.brand}
-                publishing_house={item.publishing_house}
-                price={item.price}
-                quantity={item.quantity}
-                rating={item.rating}
-                getBooks={getBooks}
-                isAdmin={isAdmin}
-                cartItemsNumber={cartItemsNumber}
-                setCartItemsNumber={setCartItemsNumber}
-            />
-            <div>{'Pick For This Week'}</div>
+        <div className="">
+             <div className="row pick-container" id="book-row">
+                <div className="title"><h1>Top Products</h1></div>
+                    {books.map((item) => (
+                        <Book
+                            key={item.id}
+                            id={item.id}
+                            date={item.availability_date}
+                            discount={item.discount}
+                            name={item.name}
+                            author={item.author}
+                            category={item.category}
+                            image={item.image}
+                            brand={item.brand}
+                            publishing_house={item.publishing_house}
+                            price={item.price}
+                            quantity={item.quantity}
+                            rating={item.rating}
+                            getBooks={getBooks}
+                            isAdmin={isAdmin}
+                            cartItemsNumber={cartItemsNumber}
+                            setCartItemsNumber={setCartItemsNumber}
+                        />
+                    ))}
+                </div>
         </div>
     );
 }

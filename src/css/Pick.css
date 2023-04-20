@@ -1,4 +1,6 @@
 .pick-container {
-	display: flex;
 	justify-content: center;
+}
+.title{
+	margin-left: 700px;
 }
